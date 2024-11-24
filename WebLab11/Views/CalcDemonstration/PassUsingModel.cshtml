@@ -1,0 +1,35 @@
+﻿@model CalcDemonstrationViewModel
+@{
+	ViewData["Title"] = "PassUsingModel";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<b>Rand first value: </b> @Model.FirstNum
+<br />
+<b>Rand second value: </b> @Model.SecondNum
+<br />
+<br />
+
+<b>Add: </b>
+<br />
+@Model.FirstNum +  @Model.SecondNum = @Model.Addition
+<br />
+<br />
+
+<b>Sub: </b>
+<br />
+@Model.FirstNum -  @Model.SecondNum =  @Model.Subtraction
+<br />
+<br />
+
+<b>Mult: </b>
+@Model.FirstNum *  @Model.SecondNum =  @Model.Multiplication
+<br />
+<br />
+
+<b>Div:</b>
+<br />
+@Model.FirstNum /  @Model.SecondNum =  @Model.Division
+<br />
+<br />
