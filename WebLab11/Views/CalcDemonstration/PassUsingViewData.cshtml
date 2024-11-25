@@ -1,0 +1,34 @@
+﻿﻿@{
+    ViewData["Title"] = "PassUsingVievData - Backend1";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<b>Rand first value: </b> @ViewData["FirstNum"]
+<br />
+<b>Rand second value: </b> @ViewData["SecindNum"]
+<br />
+<br />
+
+<b>Add: </b>
+<br />
+@ViewData["FirstNum"] +  @ViewData["SecondNum"] = @ViewData["Addition"]
+<br />
+<br />
+
+<b>Sub: </b>
+<br />
+@ViewData["FirstNum"] -  @ViewData["SecondNum"] =  @ViewData["Subtraction"]
+<br />
+<br />
+
+<b>Mult: </b>
+@ViewData["FirstNum"] *  @ViewData["SecondNum"] =  @ViewData["Multiplication"]
+<br />
+<br />
+
+<b>Div:</b>
+<br />
+@ViewData["FirstNum"] /  @ViewData["SecondNum"] =  @ViewData["Division"]
+<br />
+<br />

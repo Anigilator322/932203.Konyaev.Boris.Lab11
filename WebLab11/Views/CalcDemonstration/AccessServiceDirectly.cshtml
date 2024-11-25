@@ -1,0 +1,36 @@
+﻿@using WebLab11.Services
+
+@inject ICalcDemonstrationService service
+@{
+	ViewData["Title"] = "Access Service Directly - Backend 1";
+}
+
+<b>Rand first value: </b> @service.FirstNum
+<br />
+<b>Rand second value: </b> @service.SecondNum
+<br />
+<br />
+
+<b>Add: </b>
+<br />
+@service.FirstNum +  @service.SecondNum = @service.Addition()
+<br />
+<br />
+
+<b>Sub: </b>
+<br />
+@service.FirstNum -  @service.SecondNum =  @service.Subtraction()
+<br />
+<br />
+
+<b>Mult: </b>
+<br/>
+@service.FirstNum *  @service.SecondNum =  @service.Multiplication()
+<br />
+<br />
+
+<b>Div:</b>
+<br />
+@service.FirstNum /  @service.SecondNum =  @service.Division()
+<br />
+<br />

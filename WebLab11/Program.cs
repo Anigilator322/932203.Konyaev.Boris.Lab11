@@ -1,3 +1,5 @@
+using WebLab11.Services;
+
 namespace WebLab11
 {
     public class Program
@@ -8,6 +10,8 @@ namespace WebLab11
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<ICalcDemonstrationService, CalcDemonstrationService>();
+
 
             var app = builder.Build();
 
@@ -18,7 +22,6 @@ namespace WebLab11
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

@@ -1,0 +1,34 @@
+﻿@{
+	ViewData["Title"] = "PassUsingViewBag - Backend 1";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<b>Rand first value: </b> @ViewBag.FirstNum
+<br />
+<b>Rand second value: </b> @ViewBag.SecondNum
+<br />
+<br />
+
+<b>Add: </b>
+<br />
+@ViewBag.FirstNum +  @ViewBag.SecondNum = @ViewBag.Addition
+<br />
+<br />
+
+<b>Sub: </b>
+<br />
+@ViewBag.FirstNum -  @ViewBag.SecondNum =  @ViewBag.Subtraction
+<br />
+<br />
+
+<b>Mult: </b>
+@ViewBag.FirstNum *  @ViewBag.SecondNum =  @ViewBag.Multiplication
+<br />
+<br />
+
+<b>Div:</b>
+<br />
+@ViewBag.FirstNum /  @ViewBag.SecondNum =  @ViewBag.Division
+<br />
+<br />
